@@ -1,0 +1,451 @@
+/* ==========================
+   SITIO WEB DE TAROT - ESTILOS PRINCIPALES
+   Autor: MiniMax Agent
+   ========================== */
+
+/* Importar fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Variables CSS para colores místicos */
+:root {
+  --primary-purple: #4a1a4a;
+  --secondary-purple: #6b2c6b;
+  --accent-gold: #d4af37;
+  --midnight-blue: #1a1a3a;
+  --mystical-gray: #2d2d3a;
+  --text-light: #f8f9fa;
+  --text-dark: #2c3e50;
+  --gradient-primary: linear-gradient(135deg, #4a1a4a, #6b2c6b);
+  --gradient-gold: linear-gradient(135deg, #d4af37, #f4d03f);
+  --shadow-mystical: 0 10px 30px rgba(74, 26, 74, 0.3);
+}
+
+/* Reset y configuración base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+}
+
+/* Tipografía */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Navegación */
+.navbar {
+  background: rgba(26, 26, 58, 0.95) !important;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-mystical);
+}
+
+.navbar-brand {
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--accent-gold) !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-light) !important;
+  font-weight: 400;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent-gold) !important;
+  transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--accent-gold) !important;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background: var(--gradient-gold);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 80%;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(26, 26, 58, 0.8), rgba(74, 26, 74, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><defs><radialGradient id="stars"><stop offset="0%" stop-color="%23fff" stop-opacity="0.8"/><stop offset="100%" stop-color="%23fff" stop-opacity="0"/></radialGradient></defs><rect width="100%" height="100%" fill="%231a1a3a"/><circle cx="200" cy="150" r="2" fill="url(%23stars)"/><circle cx="400" cy="300" r="1.5" fill="url(%23stars)"/><circle cx="600" cy="100" r="1" fill="url(%23stars)"/><circle cx="800" cy="400" r="2" fill="url(%23stars)"/><circle cx="1000" cy="200" r="1.5" fill="url(%23stars)"/><circle cx="1200" cy="350" r="1" fill="url(%23stars)"/><circle cx="1400" cy="180" r="2" fill="url(%23stars)"/><circle cx="1600" cy="450" r="1.5" fill="url(%23stars)"/></svg>');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: var(--text-light);
+  position: relative;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  background: var(--gradient-gold);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.hero-content p.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* Botones */
+.btn-mystical {
+  background: var(--gradient-primary);
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: var(--shadow-mystical);
+}
+
+.btn-mystical:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(74, 26, 74, 0.4);
+  color: white;
+}
+
+.btn-gold {
+  background: var(--gradient-gold);
+  border: none;
+  color: var(--midnight-blue);
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-gold:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4);
+  color: var(--midnight-blue);
+}
+
+/* Secciones */
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title h2 {
+  color: var(--primary-purple);
+  margin-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--gradient-gold);
+  border-radius: 2px;
+}
+
+/* Cards */
+.mystical-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(74, 26, 74, 0.1);
+}
+
+.mystical-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-mystical);
+}
+
+.mystical-card .icon {
+  width: 60px;
+  height: 60px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Servicios */
+.service-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(74, 26, 74, 0.1);
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-mystical);
+}
+
+.service-price {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+  margin: 1rem 0;
+}
+
+/* Testimonios */
+.testimonial-card {
+  background: var(--gradient-primary);
+  color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 1rem;
+  text-align: center;
+  box-shadow: var(--shadow-mystical);
+}
+
+.testimonial-stars {
+  color: var(--accent-gold);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Sobre Mí */
+.about-image {
+  border-radius: 15px;
+  box-shadow: var(--shadow-mystical);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Formularios */
+.form-control {
+  border-radius: 10px;
+  border: 2px solid rgba(74, 26, 74, 0.2);
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--primary-purple);
+  box-shadow: 0 0 0 0.2rem rgba(74, 26, 74, 0.25);
+}
+
+.form-label {
+  font-weight: 500;
+  color: var(--primary-purple);
+  margin-bottom: 0.5rem;
+}
+
+/* FAQ */
+.faq-item {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.faq-question {
+  background: var(--gradient-primary);
+  color: white;
+  padding: 1.5rem;
+  cursor: pointer;
+  margin: 0;
+  transition: all 0.3s ease;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+}
+
+.faq-question:hover {
+  background: var(--secondary-purple);
+}
+
+.faq-answer {
+  padding: 1.5rem;
+  display: none;
+  border-top: 1px solid rgba(74, 26, 74, 0.1);
+}
+
+.faq-answer.show {
+  display: block;
+}
+
+/* Footer */
+.footer {
+  background: var(--midnight-blue);
+  color: var(--text-light);
+  padding: 3rem 0 1rem;
+}
+
+.footer h5 {
+  color: var(--accent-gold);
+  margin-bottom: 1rem;
+}
+
+.footer a {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--accent-gold);
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+  background: var(--gradient-gold);
+  color: var(--midnight-blue);
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p.lead {
+    font-size: 1.1rem;
+  }
+  
+  .section-padding {
+    padding: 60px 0;
+  }
+  
+  .mystical-card,
+  .service-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .btn-mystical,
+  .btn-gold {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Efectos especiales */
+.mystical-bg {
+  background: linear-gradient(135deg, rgba(74, 26, 74, 0.05), rgba(107, 44, 107, 0.05));
+}
+
+.text-mystical {
+  color: var(--primary-purple);
+}
+
+.text-gold {
+  color: var(--accent-gold);
+}
+
+/* Loader para formularios */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.spinner-border-mystical {
+  color: var(--primary-purple);
+}

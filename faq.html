@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - FAQ | Tarot Místico</title>
+    <meta name="description" content="Respuestas a las preguntas más frecuentes sobre lecturas de tarot, cómo funcionan las sesiones, qué esperar y más información útil.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-moon"></i> Tarot Místico
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-mi.html">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-gold ms-2" href="contacto.html">Reservar Lectura</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="min-height: 60vh;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="hero-content">
+                        <h1 class="mb-4">Preguntas Frecuentes</h1>
+                        <p class="lead mb-4">Encuentra respuestas a las dudas más comunes sobre el tarot, las lecturas y nuestros servicios</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buscador de FAQ -->
+    <section class="section-padding mystical-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="mystical-card text-center">
+                        <h4 class="text-mystical mb-3">¿Tienes una Pregunta Específica?</h4>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="faqSearch" placeholder="Buscar en preguntas frecuentes...">
+                            <button class="btn btn-mystical" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <p class="small text-muted mt-2">Escribe palabras clave como "precio", "tiempo", "online", etc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías de FAQ -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Categorías de Preguntas</h2>
+                <p class="lead">Navega por temas específicos para encontrar lo que buscas</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="mystical-card text-center">
+                        <i class="fas fa-question-circle fa-2x text-mystical mb-3"></i>
+                        <h5>Sobre el Tarot</h5>
+                        <p class="small">Qué es, cómo funciona, precisión</p>
+                        <a href="#sobre-tarot" class="btn btn-mystical btn-sm">Ver Preguntas</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="mystical-card text-center">
+                        <i class="fas fa-calendar-alt fa-2x text-mystical mb-3"></i>
+                        <h5>Reservas y Citas</h5>
+                        <p class="small">Cómo reservar, cancelaciones, horarios</p>
+                        <a href="#reservas" class="btn btn-mystical btn-sm">Ver Preguntas</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="mystical-card text-center">
+                        <i class="fas fa-laptop fa-2x text-mystical mb-3"></i>
+                        <h5>Sesiones Online</h5>
+                        <p class="small">Tecnología, preparación, efectividad</p>
+                        <a href="#online" class="btn btn-mystical btn-sm">Ver Preguntas</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="mystical-card text-center">
+                        <i class="fas fa-euro-sign fa-2x text-mystical mb-3"></i>
+                        <h5>Precios y Pagos</h5>
+                        <p class="small">Costos, métodos de pago, reembolsos</p>
+                        <a href="#precios" class="btn btn-mystical btn-sm">Ver Preguntas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Sobre el Tarot -->
+    <section class="section-padding mystical-bg" id="sobre-tarot">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre el Tarot</h2>
+                <p class="lead">Entendiendo las bases de esta arte ancestral</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-magic me-2"></i>¿Qué es exactamente el tarot y cómo funciona?
+                        </button>
+                        <div class="faq-answer">
+                            <p>El tarot es un sistema de 78 cartas que funciona como un espejo del alma y las situaciones de la vida. No predice un futuro fijo, sino que revela las energías, patrones y posibilidades que rodean tu situación actual. Funciona a través de la sincronicidad - el universo conspira para que las cartas correctas aparezcan en el momento preciso para brindarte la orientación que necesitas.</p>
+                            <p>Cada carta tiene múltiples niveles de significado que, combinados con mi intuición y experiencia, crean un mensaje coherente y relevante para tu vida específica.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-bullseye me-2"></i>¿Qué tan precisas son las lecturas de tarot?
+                        </button>
+                        <div class="faq-answer">
+                            <p>La precisión del tarot no se mide como una predicción científica, sino como relevancia y resonancia con tu situación actual. Mis clientes reportan consistentemente que las lecturas reflejan con precisión sus circunstancias, emociones y los temas centrales de sus vidas.</p>
+                            <p>El tarot es especialmente preciso para:</p>
+                            <ul>
+                                <li>Identificar patrones emocionales y comportamentales</li>
+                                <li>Revelar aspectos ocultos de situaciones</li>
+                                <li>Proporcionar claridad sobre decisiones complejas</li>
+                                <li>Mostrar las energías que te rodean actualmente</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-crystal-ball me-2"></i>¿El tarot puede predecir el futuro?
+                        </button>
+                        <div class="faq-answer">
+                            <p>El tarot muestra tendencias y posibilidades basadas en tu energía actual, pero el futuro no está grabado en piedra. Las cartas revelan hacia dónde te diriges si continúas en tu camino actual, pero siempre tienes el poder de cambiar esa dirección.</p>
+                            <p>Mi enfoque se centra en empoderarte para crear conscientemente el futuro que deseas, usando la información del tarot como guía para tomar mejores decisiones.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-heart me-2"></i>¿Necesito creer en el tarot para que funcione?
+                        </button>
+                        <div class="faq-answer">
+                            <p>No necesitas ser creyente para beneficiarte de una lectura. El tarot funciona incluso para escépticos porque, en su esencia, es una herramienta de reflexión y autoconocimiento. Muchos clientes llegan con dudas y se van sorprendidos por la relevancia de los mensajes.</p>
+                            <p>Lo único que necesitas es una mente abierta y la voluntad de reflexionar sobre las perspectivas que emergen durante la sesión.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Reservas y Citas -->
+    <section class="section-padding" id="reservas">
+        <div class="container">
+            <div class="section-title">
+                <h2>Reservas y Citas</h2>
+                <p class="lead">Todo sobre el proceso de reserva y las políticas</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-clock me-2"></i>¿Cuánto tiempo dura cada sesión?
+                        </button>
+                        <div class="faq-answer">
+                            <p>La duración varía según el tipo de lectura:</p>
+                            <ul>
+                                <li><strong>Pregunta Específica:</strong> 30 minutos</li>
+                                <li><strong>Lectura General:</strong> 45 minutos</li>
+                                <li><strong>Amor y Relaciones:</strong> 50 minutos</li>
+                                <li><strong>Carrera y Finanzas:</strong> 60 minutos</li>
+                                <li><strong>Lectura Anual:</strong> 75 minutos</li>
+                                <li><strong>Consulta en Pareja:</strong> 60 minutos</li>
+                            </ul>
+                            <p>Siempre incluyo unos minutos extra para asegurarme de que todas tus preguntas sean respondidas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-calendar-check me-2"></i>¿Cómo puedo reservar una cita?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Puedes reservar de varias formas:</p>
+                            <ul>
+                                <li><strong>Formulario online:</strong> Completa el formulario en la página de contacto</li>
+                                <li><strong>WhatsApp:</strong> +34 123 456 789 (respuesta más rápida)</li>
+                                <li><strong>Llamada directa:</strong> +34 123 456 789 en horario de atención</li>
+                                <li><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4920272f26093d283b263d24203a3d202a26672a2624">[email&#160;protected]</a></li>
+                            </ul>
+                            <p>Te contactaré dentro de 24 horas para confirmar fecha, hora y detalles de pago.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-times-circle me-2"></i>¿Cuál es la política de cancelación?
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>Cancelación gratuita:</strong> Hasta 24 horas antes de la cita.</p>
+                            <p><strong>Cancelación tardía:</strong> Menos de 24 horas - 50% del costo del servicio.</p>
+                            <p><strong>No presentarse:</strong> 100% del costo del servicio.</p>
+                            <p><strong>Emergencias genuinas:</strong> Analizadas caso por caso con flexibilidad.</p>
+                            <p>Entiendo que la vida puede ser impredecible, así que siempre trato de ser comprensiva con situaciones genuinamente urgentes.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-redo me-2"></i>¿Puedo reprogramar mi cita?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, puedes reprogramar tu cita sin costo adicional si me avisas con al menos 24 horas de anticipación. Haré todo lo posible por encontrar una nueva fecha que funcione para ambos.</p>
+                            <p>Para reprogramaciones de último minuto, aplicaré flexibilidad según las circunstancias específicas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Sesiones Online -->
+    <section class="section-padding mystical-bg" id="online">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sesiones Online</h2>
+                <p class="lead">Información sobre las consultas virtuales</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-wifi me-2"></i>¿Las sesiones online son tan efectivas como las presenciales?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutamente sí. La energía trasciende la distancia física. He realizado miles de lecturas online con la misma precisión y profundidad que las sesiones presenciales. Muchos clientes incluso prefieren las sesiones online porque:</p>
+                            <ul>
+                                <li>Se sienten más cómodos en su propio espacio</li>
+                                <li>No hay limitaciones geográficas</li>
+                                <li>Mayor flexibilidad de horarios</li>
+                                <li>Pueden grabar la sesión fácilmente</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-laptop me-2"></i>¿Qué plataforma usamos para las sesiones online?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Ofrezco flexibilidad en las plataformas según tu preferencia:</p>
+                            <ul>
+                                <li><strong>WhatsApp Video:</strong> Más popular, fácil de usar</li>
+                                <li><strong>Zoom:</strong> Excelente calidad de video y audio</li>
+                                <li><strong>Skype:</strong> Clásico y confiable</li>
+                                <li><strong>FaceTime:</strong> Para usuarios de Apple</li>
+                                <li><strong>Llamada telefónica:</strong> Solo audio, ideal para algunos clientes</li>
+                            </ul>
+                            <p>Te enviaré las instrucciones de conexión al confirmar tu cita.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-microphone me-2"></i>¿Qué necesito para una sesión online exitosa?
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>Tecnología:</strong></p>
+                            <ul>
+                                <li>Conexión estable a internet</li>
+                                <li>Dispositivo con cámara y micrófono (móvil, tablet o ordenador)</li>
+                                <li>Aplicación correspondiente instalada y funcionando</li>
+                            </ul>
+                            <p><strong>Ambiente:</strong></p>
+                            <ul>
+                                <li>Espacio privado donde puedas hablar libremente</li>
+                                <li>Ambiente tranquilo sin interrupciones</li>
+                                <li>Iluminación adecuada para que podamos vernos bien</li>
+                                <li>Algunos clientes prefieren encender una vela para crear ambiente sagrado</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-globe me-2"></i>¿Atiendes clientes internacionales?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, trabajo con clientes de todo el mundo. Las sesiones online me permiten conectar con personas desde cualquier ubicación geográfica. </p>
+                            <p><strong>Consideraciones importantes:</strong></p>
+                            <ul>
+                                <li>Las sesiones se realizan en español</li>
+                                <li>Coordinamos horarios según las zonas horarias</li>
+                                <li>El pago se puede hacer mediante PayPal o transferencia internacional</li>
+                                <li>Los precios se mantienen en euros</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Precios y Pagos -->
+    <section class="section-padding" id="precios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Precios y Pagos</h2>
+                <p class="lead">Información transparente sobre costos y métodos de pago</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-euro-sign me-2"></i>¿Cuáles son los precios de cada servicio?
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>Servicios Individuales:</strong></p>
+                            <ul>
+                                <li>Pregunta Específica (30 min): €30</li>
+                                <li>Lectura General (45 min): €45</li>
+                                <li>Amor y Relaciones (50 min): €50</li>
+                                <li>Carrera y Finanzas (60 min): €55</li>
+                                <li>Limpieza Energética (45 min): €60</li>
+                                <li>Lectura Anual (75 min): €80</li>
+                                <li>Consulta en Pareja (60 min): €85</li>
+                            </ul>
+                            <p><strong>Paquetes Especiales:</strong></p>
+                            <ul>
+                                <li>Paquete Transformación (3 sesiones): €110 (ahorro de €25)</li>
+                                <li>Paquete Anual VIP (7 sesiones): €280 (ahorro de €70)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-credit-card me-2"></i>¿Qué métodos de pago aceptas?
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>Para clientes en España:</strong></p>
+                            <ul>
+                                <li>Transferencia bancaria (preferido)</li>
+                                <li>PayPal</li>
+                                <li>Efectivo (solo sesiones presenciales)</li>
+                                <li>Bizum</li>
+                            </ul>
+                            <p><strong>Para clientes internacionales:</strong></p>
+                            <ul>
+                                <li>PayPal (opción más conveniente)</li>
+                                <li>Transferencia bancaria internacional</li>
+                                <li>Wise (Transferwise)</li>
+                            </ul>
+                            <p>El pago se realiza antes de la sesión. Te envío los detalles al confirmar tu cita.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-percentage me-2"></i>¿Ofreces descuentos o promociones?
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>Descuentos disponibles:</strong></p>
+                            <ul>
+                                <li><strong>Clientes frecuentes:</strong> 10% de descuento a partir de la 5ª sesión</li>
+                                <li><strong>Estudiantes:</strong> 15% de descuento con identificación válida</li>
+                                <li><strong>Referidos:</strong> 10% de descuento por cada persona que refieras</li>
+                                <li><strong>Promociones especiales:</strong> Durante fechas específicas (anunciadas en redes sociales)</li>
+                            </ul>
+                            <p>Los paquetes ya incluyen descuentos significativos y no se pueden combinar con otras ofertas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-undo-alt me-2"></i>¿Hay política de reembolso?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Entiendo que la satisfacción es importante. Mi política de reembolso es:</p>
+                            <ul>
+                                <li><strong>Problemas técnicos:</strong> Reembolso completo si no podemos conectar por problemas de mi lado</li>
+                                <li><strong>Insatisfacción genuina:</strong> Analizado caso por caso, generalmente ofrezco una sesión de seguimiento gratuita</li>
+                                <li><strong>Cancelación por mi parte:</strong> Reembolso completo inmediato</li>
+                            </ul>
+                            <p>Mi objetivo es que cada cliente se sienta valorado y satisfecho con la experiencia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Misceláneas -->
+    <section class="section-padding mystical-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Otras Preguntas Comunes</h2>
+                <p class="lead">Dudas adicionales que pueden surgir</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-user-clock me-2"></i>¿Con qué frecuencia puedo tener lecturas?
+                        </button>
+                        <div class="faq-answer">
+                            <p>No hay límites estrictos, pero recomiendo:</p>
+                            <ul>
+                                <li><strong>Para temas generales:</strong> Cada 3-6 meses</li>
+                                <li><strong>Para situaciones específicas:</strong> Cuando sientas que necesitas claridad adicional</li>
+                                <li><strong>Para seguimiento de decisiones:</strong> 4-6 semanas después de la lectura inicial</li>
+                            </ul>
+                            <p>Es importante dar tiempo para que las energías evolucionen y para que puedas implementar los consejos recibidos.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-shield-alt me-2"></i>¿Es confidencial mi consulta?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutamente. Trabajo bajo estrictos códigos de confidencialidad profesional. Tu información personal y los detalles de tu lectura JAMÁS serán compartidos con terceros.</p>
+                            <p>Esta confidencialidad se mantiene independientemente del método de pago, la plataforma utilizada o cualquier otra circunstancia.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-birthday-cake me-2"></i>¿Necesitas mi fecha de nacimiento?
+                        </button>
+                        <div class="faq-answer">
+                            <p>La fecha de nacimiento es útil pero no obligatoria. Me ayuda a:</p>
+                            <ul>
+                                <li>Conectar mejor con tu energía específica</li>
+                                <li>Entender tus ciclos energéticos naturales</li>
+                                <li>Proporcionar contexto astrológico si es relevante</li>
+                            </ul>
+                            <p>Si prefieres no compartirla, puedo realizar una lectura igualmente efectiva basándome en tu energía presente.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <i class="fas fa-question me-2"></i>¿Qué tipos de preguntas puedo hacer?
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>Preguntas efectivas:</strong></p>
+                            <ul>
+                                <li>"¿Qué necesito saber sobre mi situación actual en...?"</li>
+                                <li>"¿Cuál es la mejor dirección para mí en...?"</li>
+                                <li>"¿Qué energías me rodean respecto a...?"</li>
+                                <li>"¿Cómo puedo mejorar mi situación en...?"</li>
+                            </ul>
+                            <p><strong>Preguntas que evito:</strong></p>
+                            <ul>
+                                <li>Información médica específica (siempre consulta a profesionales de la salud)</li>
+                                <li>Preguntas sobre terceras personas sin su consentimiento</li>
+                                <li>Solicitudes para dañar o manipular a otros</li>
+                                <li>Preguntas sobre loterías o juegos de azar específicos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto para Más Dudas -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-mystical mb-4">¿No Encontraste tu Respuesta?</h2>
+                    <p class="lead mb-4">Estoy aquí para resolver cualquier duda que puedas tener. No dudes en contactarme directamente.</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="contacto.html" class="btn btn-mystical">Enviar Consulta</a>
+                        <a href="https://wa.me/34123456789" class="btn btn-gold" target="_blank">
+                            <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-moon me-2"></i>Tarot Místico</h5>
+                    <p>Conectando almas con su verdadero propósito a través de la sabiduría ancestral del tarot y la guía espiritual personalizada.</p>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="servicios.html">Lectura General</a></li>
+                        <li><a href="servicios.html">Amor y Relaciones</a></li>
+                        <li><a href="servicios.html">Carrera y Finanzas</a></li>
+                        <li><a href="servicios.html">Lectura Anual</a></li>
+                        <li><a href="servicios.html">Pregunta Específica</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-phone me-2"></i>+34 123 456 789</p>
+                    <p><i class="fas fa-envelope me-2"></i><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1f767179705f6b7e6d706b72766c6b767c70317c7072">[email&#160;protected]</a></p>
+                    <p><i class="fas fa-clock me-2"></i>Lun-Vie: 9:00-20:00<br>Sáb: 10:00-18:00</p>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Tarot Místico - Todos los derechos reservados</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="me-3">Política de Privacidad</a>
+                    <a href="#">Términos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="scripts/main.js"></script>
+
+    <!-- Script para búsqueda en FAQ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('faqSearch');
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question').textContent.toLowerCase();
+                    const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+                    
+                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                        item.style.display = 'block';
+                        // Highlight the search term if found
+                        if (searchTerm.length > 2) {
+                            item.classList.add('highlight');
+                        } else {
+                            item.classList.remove('highlight');
+                        }
+                    } else {
+                        item.style.display = 'none';
+                        item.classList.remove('highlight');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <style>
+        .faq-item.highlight {
+            border: 2px solid var(--accent-gold);
+            background: rgba(212, 175, 55, 0.1);
+        }
+    </style>
+</body>
+</html>

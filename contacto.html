@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Reservas - Tarot Místico | Luna Starr</title>
+    <meta name="description" content="Contacta con Luna Starr para reservar tu lectura de tarot. Formulario de contacto, horarios, información de contacto y ubicación.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-moon"></i> Tarot Místico
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-mi.html">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-gold ms-2" href="#reservar">Reservar Ahora</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="min-height: 60vh;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="hero-content">
+                        <h1 class="mb-4">Conectemos</h1>
+                        <p class="lead mb-4">Tu transformación comienza con una conversación. Estoy aquí para guiarte hacia la claridad que buscas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formas de Contacto -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>¿Cómo Prefieres Conectar?</h2>
+                <p class="lead">Múltiples formas de iniciar tu viaje espiritual</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="mystical-card text-center h-100">
+                        <i class="fas fa-phone fa-3x text-mystical mb-3"></i>
+                        <h4>Llamada Directa</h4>
+                        <p class="mb-3">Para consultas inmediatas o reservas urgentes. Disponible en horarios de atención.</p>
+                        <h5 class="text-gold mb-3">+34 123 456 789</h5>
+                        <p class="small text-muted">Lun-Vie: 9:00-20:00<br>Sáb: 10:00-18:00</p>
+                        <a href="tel:+34123456789" class="btn btn-mystical">Llamar Ahora</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="mystical-card text-center h-100">
+                        <i class="fab fa-whatsapp fa-3x text-mystical mb-3"></i>
+                        <h4>WhatsApp</h4>
+                        <p class="mb-3">Respuesta rápida para consultas y coordinación de citas. La forma más cómoda de comunicarnos.</p>
+                        <h5 class="text-gold mb-3">+34 123 456 789</h5>
+                        <p class="small text-muted">Respuesta en menos de 2 horas<br>en horario de atención</p>
+                        <a href="https://wa.me/34123456789" class="btn btn-mystical" target="_blank">Enviar Mensaje</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="mystical-card text-center h-100">
+                        <i class="fas fa-envelope fa-3x text-mystical mb-3"></i>
+                        <h4>Email</h4>
+                        <p class="mb-3">Para consultas detalladas, reservas planificadas o si prefieres escribir tu historia.</p>
+                        <h5 class="text-gold mb-3"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cca5a2aaa38cb8adbea3b8a1a5bfb8a5afa3e2afa3a1">[email&#160;protected]</a></h5>
+                        <p class="small text-muted">Respuesta garantizada<br>dentro de 24 horas</p>
+                        <a href="/cdn-cgi/l/email-protection#274e4941486753465548534a4e54534e44480944484a" class="btn btn-mystical">Enviar Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section class="section-padding mystical-bg" id="reservar">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="mystical-card">
+                        <div class="text-center mb-4">
+                            <h3 class="text-mystical">Formulario de Reserva</h3>
+                            <p class="lead">Completa este formulario y te contactaré dentro de 24 horas para confirmar tu cita</p>
+                        </div>
+                        
+                        <form id="contactForm" class="needs-validation" novalidate>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">Nombre *</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                    <div class="invalid-feedback">
+                                        Por favor ingresa tu nombre.
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Apellidos *</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                    <div class="invalid-feedback">
+                                        Por favor ingresa tus apellidos.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                    <div class="invalid-feedback">
+                                        Por favor ingresa un email válido.
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Teléfono *</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                    <div class="invalid-feedback">
+                                        Por favor ingresa tu teléfono.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="serviceType" class="form-label">Tipo de Lectura *</label>
+                                    <select class="form-control" id="serviceType" required>
+                                        <option value="">Selecciona un servicio</option>
+                                        <option value="lectura-general">Lectura General (€45)</option>
+                                        <option value="amor-relaciones">Amor y Relaciones (€50)</option>
+                                        <option value="carrera-finanzas">Carrera y Finanzas (€55)</option>
+                                        <option value="lectura-anual">Lectura Anual (€80)</option>
+                                        <option value="pregunta-especifica">Pregunta Específica (€30)</option>
+                                        <option value="limpieza-energetica">Limpieza Energética (€60)</option>
+                                        <option value="consulta-pareja">Consulta en Pareja (€85)</option>
+                                        <option value="no-seguro">No estoy seguro/a - Necesito orientación</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Por favor selecciona un tipo de lectura.
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="contactMethod" class="form-label">Modalidad Preferida *</label>
+                                    <select class="form-control" id="contactMethod" required>
+                                        <option value="">Selecciona modalidad</option>
+                                        <option value="videollamada">Videollamada (Zoom/WhatsApp)</option>
+                                        <option value="telefono">Llamada telefónica</option>
+                                        <option value="presencial">Presencial (Madrid)</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Por favor selecciona una modalidad.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="preferredDate" class="form-label">Fecha Preferida *</label>
+                                    <input type="date" class="form-control" id="preferredDate" required>
+                                    <div class="invalid-feedback">
+                                        Por favor selecciona una fecha.
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="preferredTime" class="form-label">Horario Preferido *</label>
+                                    <select class="form-control" id="preferredTime" required>
+                                        <option value="">Selecciona un horario</option>
+                                        <option value="09:00-10:00">09:00 - 10:00</option>
+                                        <option value="10:00-11:00">10:00 - 11:00</option>
+                                        <option value="11:00-12:00">11:00 - 12:00</option>
+                                        <option value="12:00-13:00">12:00 - 13:00</option>
+                                        <option value="15:00-16:00">15:00 - 16:00</option>
+                                        <option value="16:00-17:00">16:00 - 17:00</option>
+                                        <option value="17:00-18:00">17:00 - 18:00</option>
+                                        <option value="18:00-19:00">18:00 - 19:00</option>
+                                        <option value="19:00-20:00">19:00 - 20:00</option>
+                                        <option value="flexible">Flexible - Cualquier hora disponible</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Por favor selecciona un horario.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="birthDate" class="form-label">Fecha de Nacimiento (Opcional)</label>
+                                <input type="date" class="form-control" id="birthDate">
+                                <small class="form-text text-muted">Esta información me ayuda a conectar mejor con tu energía y proporcionar una lectura más precisa.</small>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="consultationReason" class="form-label">Cuéntame sobre tu consulta *</label>
+                                <textarea class="form-control" id="consultationReason" rows="4" required placeholder="Describe brevemente tu situación actual, qué te preocupa o en qué área de tu vida buscas orientación. No necesitas dar muchos detalles, profundizaremos durante la sesión."></textarea>
+                                <div class="invalid-feedback">
+                                    Por favor describe tu consulta.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="additionalInfo" class="form-label">Información Adicional (Opcional)</label>
+                                <textarea class="form-control" id="additionalInfo" rows="3" placeholder="¿Has tenido lecturas de tarot antes? ¿Hay algo específico que deba saber? ¿Tienes alguna pregunta sobre el proceso?"></textarea>
+                            </div>
+                            
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="acceptTerms" required>
+                                <label class="form-check-label" for="acceptTerms">
+                                    Acepto los <a href="#" class="text-mystical">términos y condiciones</a> y la <a href="#" class="text-mystical">política de privacidad</a> *
+                                </label>
+                                <div class="invalid-feedback">
+                                    Debes aceptar los términos y condiciones.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="acceptNewsletter">
+                                <label class="form-check-label" for="acceptNewsletter">
+                                    Quiero recibir consejos espirituales y ofertas especiales por email
+                                </label>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-mystical btn-lg px-5">
+                                    <i class="fas fa-paper-plane me-2"></i>Enviar Solicitud de Reserva
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información de Contacto -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="mystical-card text-center">
+                        <i class="fas fa-map-marker-alt fa-2x text-mystical mb-3"></i>
+                        <h5>Ubicación</h5>
+                        <p class="mb-2">Madrid, España</p>
+                        <p class="text-muted small">Las sesiones presenciales se realizan en un espacio sagrado especialmente preparado en el centro de Madrid. La dirección exacta se proporciona al confirmar la cita.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="mystical-card text-center">
+                        <i class="fas fa-clock fa-2x text-mystical mb-3"></i>
+                        <h5>Horarios de Atención</h5>
+                        <div class="mb-2">
+                            <strong>Lunes a Viernes:</strong><br>
+                            9:00 - 20:00
+                        </div>
+                        <div class="mb-2">
+                            <strong>Sábados:</strong><br>
+                            10:00 - 18:00
+                        </div>
+                        <div class="text-muted">
+                            <strong>Domingos:</strong> Cerrado<br>
+                            <small>(Excepto casos de emergencia espiritual)</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="mystical-card text-center">
+                        <i class="fas fa-shield-alt fa-2x text-mystical mb-3"></i>
+                        <h5>Política de Privacidad</h5>
+                        <p class="mb-2">Todas las consultas son <strong>completamente confidenciales</strong>.</p>
+                        <p class="text-muted small">Tu información personal y los detalles de tu lectura jamás serán compartidos con terceros. Trabajo bajo estrictos códigos éticos profesionales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa Conceptual -->
+    <section class="section-padding mystical-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Encuentra Nuestro Espacio</h2>
+                <p class="lead">Centro de Madrid - Ubicación exacta al confirmar cita</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="mystical-card">
+                        <!-- Aquí iría un mapa real, por ahora usamos un placeholder -->
+                        <div class="text-center p-5" style="background: linear-gradient(135deg, rgba(74, 26, 74, 0.1), rgba(107, 44, 107, 0.1)); border-radius: 10px; min-height: 300px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                            <i class="fas fa-map-marked-alt fa-4x text-mystical mb-3"></i>
+                            <h4 class="text-mystical">Mapa Interactivo</h4>
+                            <p class="text-muted">El mapa detallado con la ubicación exacta se enviará al confirmar tu cita reservada.</p>
+                            <p class="small text-muted">Zona Centro - Bien conectado por Metro y Bus<br>Parking público disponible en la zona</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes sobre Contacto -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Preguntas sobre Reservas</h2>
+                <p class="lead">Respuestas rápidas a las dudas más comunes</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="mystical-card">
+                        <h5 class="text-mystical mb-3">¿Cuánto tiempo antes debo reservar?</h5>
+                        <p>Recomiendo reservar con al menos 48-72 horas de anticipación, aunque a menudo puedo acomodar citas con menos tiempo. Para fechas específicas o fines de semana, es mejor reservar con una semana de anticipación.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="mystical-card">
+                        <h5 class="text-mystical mb-3">¿Qué pasa si necesito cancelar?</h5>
+                        <p>Puedes cancelar o reprogramar tu cita sin cargo hasta 24 horas antes. Las cancelaciones con menos de 24 horas de aviso tienen un cargo del 50% del servicio, excepto por emergencias genuinas.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="mystical-card">
+                        <h5 class="text-mystical mb-3">¿Cómo funciona el pago?</h5>
+                        <p>El pago se realiza antes de la sesión mediante transferencia bancaria, PayPal o efectivo (para sesiones presenciales). Te enviaré los detalles de pago al confirmar tu cita.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="mystical-card">
+                        <h5 class="text-mystical mb-3">¿Qué necesito para la sesión online?</h5>
+                        <p>Solo necesitas una conexión estable a internet, un dispositivo con cámara (para videollamada) y un espacio tranquilo donde puedas hablar con privacidad durante la duración de la sesión.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="faq.html" class="btn btn-gold">Ver Todas las Preguntas Frecuentes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-moon me-2"></i>Tarot Místico</h5>
+                    <p>Conectando almas con su verdadero propósito a través de la sabiduría ancestral del tarot y la guía espiritual personalizada.</p>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="servicios.html">Lectura General</a></li>
+                        <li><a href="servicios.html">Amor y Relaciones</a></li>
+                        <li><a href="servicios.html">Carrera y Finanzas</a></li>
+                        <li><a href="servicios.html">Lectura Anual</a></li>
+                        <li><a href="servicios.html">Pregunta Específica</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-phone me-2"></i>+34 123 456 789</p>
+                    <p><i class="fas fa-envelope me-2"></i><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="86efe8e0e9c6f2e7f4e9f2ebeff5f2efe5e9a8e5e9eb">[email&#160;protected]</a></p>
+                    <p><i class="fas fa-clock me-2"></i>Lun-Vie: 9:00-20:00<br>Sáb: 10:00-18:00</p>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Tarot Místico - Todos los derechos reservados</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="me-3">Política de Privacidad</a>
+                    <a href="#">Términos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="scripts/main.js"></script>
+    
+    <!-- Script para establecer fecha mínima -->
+    <script>
+        // Establecer fecha mínima como mañana
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date();
+            const tomorrow = new Date(today);
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            
+            const dateInput = document.getElementById('preferredDate');
+            if (dateInput) {
+                dateInput.min = tomorrow.toISOString().split('T')[0];
+            }
+        });
+    </script>
+</body>
+</html>

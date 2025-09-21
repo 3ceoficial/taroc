@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Tarot - Lecturas Profesionales | Tarot Místico</title>
+    <meta name="description" content="Descubre nuestros servicios de lectura de tarot: amor, carrera, vida general, consultas anuales y preguntas específicas. Reserva tu sesión personalizada.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-moon"></i> Tarot Místico
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-mi.html">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-gold ms-2" href="contacto.html">Reservar Lectura</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="min-height: 60vh;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="hero-content">
+                        <h1 class="mb-4">Servicios de Lectura</h1>
+                        <p class="lead mb-4">Cada lectura es un viaje único hacia el autoconocimiento y la claridad. Descubre el servicio perfecto para tu momento actual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Principales -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lecturas Especializadas</h2>
+                <p class="lead">Servicios diseñados para abordar las diferentes áreas de tu vida</p>
+            </div>
+            
+            <div class="row">
+                <!-- Lectura General -->
+                <div class="col-lg-6 mb-4">
+                    <div class="service-card h-100">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 text-center mb-3 mb-md-0">
+                                <div class="service-icon">
+                                    <i class="fas fa-compass fa-3x text-mystical"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="text-mystical">Lectura General</h4>
+                                <p class="mb-3">Una visión completa de tu situación actual abarcando amor, trabajo, salud y crecimiento personal.</p>
+                                <ul class="list-unstyled mb-3">
+                                    <li><i class="fas fa-check text-gold me-2"></i>Tirada de 10 cartas</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>Análisis de energías actuales</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>Orientación para todos los aspectos</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>Grabación de la sesión incluida</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <span class="service-price">€45</span>
+                                        <small class="text-muted d-block"><i class="fas fa-clock"></i> 45 minutos</small>
+                                    </div>
+                                    <button class="btn btn-mystical" onclick="openReservationModal('Lectura General', '€45')">Reservar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Amor y Relaciones -->
+                <div class="col-lg-6 mb-4">
+                    <div class="service-card h-100">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 text-center mb-3 mb-md-0">
+                                <div class="service-icon">
+                                    <i class="fas fa-heart fa-3x text-mystical"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="text-mystical">Amor y Relaciones</h4>
+                                <p class="mb-3">Explora las dinámicas de tus relaciones actuales y futuras conexiones amorosas.</p>
+                                <ul class="list-unstyled mb-3">
+                                    <li><i class="fas fa-check text-gold me-2"></i>Tirada especializada en amor</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>Compatibilidad de parejas</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>Sanación emocional</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>Consejos para atraer el amor</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <span class="service-price">€50</span>
+                                        <small class="text-muted d-block"><i class="fas fa-clock"></i> 50 minutos</small>
+                                    </div>
+                                    <button class="btn btn-mystical" onclick="openReservationModal('Amor y Relaciones', '€50')">Reservar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carrera y Finanzas -->
+                <div class="col-lg-6 mb-4">
+                    <div class="service-card h-100">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 text-center mb-3 mb-md-0">
+                                <div class="service-icon">
+                                    <i class="fas fa-briefcase fa-3x text-mystical"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="text-mystical">Carrera y Finanzas</h4>
+                                <p class="mb-3">Orientación profesional y financiera para tomar decisiones acertadas en tu crecimiento.</p>
+                                <ul class="list-unstyled mb-3">
+                                    <li><i class="fas fa-check text-gold me-2"></i>Análisis de oportunidades laborales</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>Orientación para inversiones</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>Detección de obstáculos</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>Planificación estratégica</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <span class="service-price">€55</span>
+                                        <small class="text-muted d-block"><i class="fas fa-clock"></i> 60 minutos</small>
+                                    </div>
+                                    <button class="btn btn-mystical" onclick="openReservationModal('Carrera y Finanzas', '€55')">Reservar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lectura Anual -->
+                <div class="col-lg-6 mb-4">
+                    <div class="service-card h-100">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 text-center mb-3 mb-md-0">
+                                <div class="service-icon">
+                                    <i class="fas fa-calendar-alt fa-3x text-mystical"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="text-mystical">Lectura Anual</h4>
+                                <p class="mb-3">Una visión completa de los próximos 12 meses con predicciones mes a mes.</p>
+                                <ul class="list-unstyled mb-3">
+                                    <li><i class="fas fa-check text-gold me-2"></i>Tirada de 12 cartas (una por mes)</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>Predicciones detalladas</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>Calendario energético personalizado</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>Ritual de protección incluido</li>
+                                </ul>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <span class="service-price">€80</span>
+                                        <small class="text-muted d-block"><i class="fas fa-clock"></i> 75 minutos</small>
+                                    </div>
+                                    <button class="btn btn-mystical" onclick="openReservationModal('Lectura Anual', '€80')">Reservar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Especiales -->
+    <section class="section-padding mystical-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Servicios Especiales</h2>
+                <p class="lead">Consultas específicas y servicios únicos para situaciones particulares</p>
+            </div>
+            
+            <div class="row">
+                <!-- Pregunta Específica -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100 text-center">
+                        <i class="fas fa-question-circle fa-3x text-mystical mb-3"></i>
+                        <h4 class="text-mystical">Pregunta Específica</h4>
+                        <p>Obtén respuesta clara y directa a una pregunta concreta que tengas en mente.</p>
+                        <ul class="list-unstyled mb-3 text-start">
+                            <li><i class="fas fa-check text-gold me-2"></i>Tirada de 3-5 cartas</li>
+                            <li><i class="fas fa-check text-gold me-2"></i>Respuesta directa y clara</li>
+                            <li><i class="fas fa-check text-gold me-2"></i>Consejos específicos</li>
+                        </ul>
+                        <div class="service-price">€30</div>
+                        <p class="text-muted"><i class="fas fa-clock"></i> 30 minutos</p>
+                        <button class="btn btn-mystical w-100" onclick="openReservationModal('Pregunta Específica', '€30')">Reservar</button>
+                    </div>
+                </div>
+
+                <!-- Limpieza Energética -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100 text-center">
+                        <i class="fas fa-hand-sparkles fa-3x text-mystical mb-3"></i>
+                        <h4 class="text-mystical">Limpieza Energética</h4>
+                        <p>Liberación de energías negativas y armonización de tu campo áurico.</p>
+                        <ul class="list-unstyled mb-3 text-start">
+                            <li><i class="fas fa-check text-gold me-2"></i>Diagnóstico energético</li>
+                            <li><i class="fas fa-check text-gold me-2"></i>Ritual de limpieza</li>
+                            <li><i class="fas fa-check text-gold me-2"></i>Protección espiritual</li>
+                        </ul>
+                        <div class="service-price">€60</div>
+                        <p class="text-muted"><i class="fas fa-clock"></i> 45 minutos</p>
+                        <button class="btn btn-mystical w-100" onclick="openReservationModal('Limpieza Energética', '€60')">Reservar</button>
+                    </div>
+                </div>
+
+                <!-- Consulta Pareja -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100 text-center">
+                        <i class="fas fa-users fa-3x text-mystical mb-3"></i>
+                        <h4 class="text-mystical">Consulta en Pareja</h4>
+                        <p>Sesión especial para parejas que buscan entender y mejorar su relación.</p>
+                        <ul class="list-unstyled mb-3 text-start">
+                            <li><i class="fas fa-check text-gold me-2"></i>Análisis conjunto</li>
+                            <li><i class="fas fa-check text-gold me-2"></i>Compatibilidad energética</li>
+                            <li><i class="fas fa-check text-gold me-2"></i>Guía para armonizar</li>
+                        </ul>
+                        <div class="service-price">€85</div>
+                        <p class="text-muted"><i class="fas fa-clock"></i> 60 minutos</p>
+                        <button class="btn btn-mystical w-100" onclick="openReservationModal('Consulta en Pareja', '€85')">Reservar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paquetes y Promociones -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Paquetes Especiales</h2>
+                <p class="lead">Aprovecha nuestras ofertas para un acompañamiento más completo</p>
+            </div>
+            
+            <div class="row">
+                <!-- Paquete Transformación -->
+                <div class="col-lg-6 mb-4">
+                    <div class="service-card h-100 border-3" style="border-color: var(--accent-gold) !important;">
+                        <div class="text-center mb-3">
+                            <h4 class="text-mystical">Paquete Transformación</h4>
+                            <span class="badge bg-warning text-dark">¡Más Popular!</span>
+                        </div>
+                        <p>Tres sesiones de seguimiento durante 3 meses para un proceso de transformación completo.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 class="text-mystical">Incluye:</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-gold me-2"></i>Lectura inicial general</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>Seguimiento al mes</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>Sesión final de cierre</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>Chat de apoyo WhatsApp</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center">
+                                    <del class="text-muted">€135</del>
+                                    <div class="service-price">€110</div>
+                                    <small class="text-success">Ahorra €25</small>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-gold w-100 mt-3" onclick="openReservationModal('Paquete Transformación', '€110')">Reservar Paquete</button>
+                    </div>
+                </div>
+
+                <!-- Paquete Anual VIP -->
+                <div class="col-lg-6 mb-4">
+                    <div class="service-card h-100 border-3" style="border-color: var(--primary-purple) !important;">
+                        <div class="text-center mb-3">
+                            <h4 class="text-mystical">Paquete Anual VIP</h4>
+                            <span class="badge" style="background: var(--gradient-primary);">Exclusivo</span>
+                        </div>
+                        <p>Acompañamiento completo durante todo el año con sesiones regulares y soporte continuo.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 class="text-mystical">Incluye:</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-gold me-2"></i>Lectura anual inicial</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>6 sesiones de seguimiento</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>Prioridad en reservas</li>
+                                    <li><i class="fas fa-check text-gold me-2"></i>Material exclusivo</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center">
+                                    <del class="text-muted">€350</del>
+                                    <div class="service-price">€280</div>
+                                    <small class="text-success">Ahorra €70</small>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-mystical w-100 mt-3" onclick="openReservationModal('Paquete Anual VIP', '€280')">Reservar VIP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información Adicional -->
+    <section class="section-padding mystical-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="mystical-card">
+                        <h4 class="text-mystical mb-3"><i class="fas fa-info-circle me-2"></i>Información Importante</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-clock text-gold me-2"></i><strong>Puntualidad:</strong> Por favor, conéctate 5 minutos antes de tu cita</li>
+                            <li class="mb-2"><i class="fas fa-calendar text-gold me-2"></i><strong>Cancelaciones:</strong> Avisa con 24h de anticipación</li>
+                            <li class="mb-2"><i class="fas fa-shield-alt text-gold me-2"></i><strong>Privacidad:</strong> Todas las consultas son completamente confidenciales</li>
+                            <li class="mb-2"><i class="fas fa-mobile-alt text-gold me-2"></i><strong>Modalidad:</strong> Sesiones por videollamada, teléfono o presencial</li>
+                            <li class="mb-2"><i class="fas fa-credit-card text-gold me-2"></i><strong>Pago:</strong> Transferencia, PayPal o efectivo (presencial)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="mystical-card">
+                        <h4 class="text-mystical mb-3"><i class="fas fa-gift me-2"></i>Beneficios Adicionales</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-microphone text-gold me-2"></i><strong>Grabación:</strong> Recibes el audio de tu sesión (excepto consultas rápidas)</li>
+                            <li class="mb-2"><i class="fas fa-file-pdf text-gold me-2"></i><strong>Resumen:</strong> Informe escrito con los puntos clave</li>
+                            <li class="mb-2"><i class="fas fa-heart text-gold me-2"></i><strong>Seguimiento:</strong> Mensaje de WhatsApp 48h después</li>
+                            <li class="mb-2"><i class="fas fa-star text-gold me-2"></i><strong>Loyalty:</strong> Descuentos por fidelidad para clientes regulares</li>
+                            <li class="mb-2"><i class="fas fa-users text-gold me-2"></i><strong>Referidos:</strong> 10% de descuento por cada persona que refieras</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Llamada a la Acción -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-mystical mb-4">¿No Estás Seguro Qué Servicio Necesitas?</h2>
+                    <p class="lead mb-4">No te preocupes, durante nuestra primera conversación determinaremos juntos cuál es la lectura más adecuada para tu situación actual.</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="contacto.html" class="btn btn-mystical">Contactar Ahora</a>
+                        <a href="faq.html" class="btn btn-gold">Ver Preguntas Frecuentes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-moon me-2"></i>Tarot Místico</h5>
+                    <p>Conectando almas con su verdadero propósito a través de la sabiduría ancestral del tarot y la guía espiritual personalizada.</p>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#lectura-general">Lectura General</a></li>
+                        <li><a href="#amor-relaciones">Amor y Relaciones</a></li>
+                        <li><a href="#carrera-finanzas">Carrera y Finanzas</a></li>
+                        <li><a href="#lectura-anual">Lectura Anual</a></li>
+                        <li><a href="#pregunta-especifica">Pregunta Específica</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-phone me-2"></i>+34 123 456 789</p>
+                    <p><i class="fas fa-envelope me-2"></i><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="96fff8f0f9d6e2f7e4f9e2fbffe5e2fff5f9b8f5f9fb">[email&#160;protected]</a></p>
+                    <p><i class="fas fa-clock me-2"></i>Lun-Vie: 9:00-20:00<br>Sáb: 10:00-18:00</p>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Tarot Místico - Todos los derechos reservados</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="me-3">Política de Privacidad</a>
+                    <a href="#">Términos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Reserva (igual que en index.html) -->
+    <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background: var(--gradient-primary); color: white;">
+                    <h5 class="modal-title" id="reservationModalLabel">Reservar Lectura</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="reservationForm">
+                        <div class="mb-3">
+                            <label for="selectedService" class="form-label">Servicio Seleccionado</label>
+                            <input type="text" class="form-control" id="selectedService" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="servicePrice" class="form-label">Precio</label>
+                            <input type="text" class="form-control" id="servicePrice" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="clientName" class="form-label">Nombre Completo *</label>
+                            <input type="text" class="form-control" id="clientName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="clientEmail" class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="clientEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="clientPhone" class="form-label">Teléfono *</label>
+                            <input type="tel" class="form-control" id="clientPhone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="preferredDate" class="form-label">Fecha Preferida *</label>
+                            <input type="date" class="form-control" id="preferredDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="preferredTime" class="form-label">Hora Preferida *</label>
+                            <select class="form-control" id="preferredTime" required>
+                                <option value="">Selecciona una hora</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="consultationMessage" class="form-label">Mensaje (Opcional)</label>
+                            <textarea class="form-control" id="consultationMessage" rows="3" placeholder="Cuéntame brevemente sobre tu consulta..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="reservationForm" class="btn btn-mystical">Confirmar Reserva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
